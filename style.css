@@ -24,7 +24,8 @@ header{
 	min-height: 100vh;
 	padding: 30vw 0 5vw;
 	position: relative;
-
+	background: url("/img/emirap.jpg");
+	background-repeat: no-repeat;
 	transform-style: inherit;
 	width: 100vw;
 	

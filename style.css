@@ -434,6 +434,7 @@ section{
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-size: 700px;
+		height: 150%;
 
 		
 	}
@@ -504,22 +505,27 @@ section{
 @media only screen and (min-width:1100px ){
 
 
+	body{
+		min-height: 1500px;
+	}
+	
+
 
 	header::before{
 		background-image: url("img/emirap.jpg");
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-size: 450px;}
+	
+		background-size: 400px;}
 
 
 	header::before{
 
 		bottom: 0;
 		content: "";
-		left: 130%;
+		left: 150%;
 		position: absolute;
 		right: 0;
-		top: 0;
+		top: 40%;
 		display: block;
 		
 		
@@ -560,7 +566,7 @@ section{
 	}
 
 	.event{
-		margin-top: -1 00px;
+		margin-top: -100px;
 	}
 
 

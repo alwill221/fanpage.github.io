@@ -6,7 +6,16 @@ html{
 	
 }
 
-body{margin: 0;
+header::before{
+	background-image: url("img/emirap.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 320px;
+}
+
+
+body{
+	margin: 0;
 	padding: 0;
 	perspective: 1px;
 	transform-style: preserve-3d;
@@ -15,7 +24,30 @@ body{margin: 0;
 	overflow-x: hidden;
 	background-color:#00a5bb;
 	font-size: 22px;
-	color: black
+	color: black;
+	
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0px;
+	top: 0;
+	display: block;
+	
+
+	
+	
+	
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(1);
+	z-index: -1;
+	
+
+	min-height:250px;
+	margin-top: 5%;
+	margin-bottom: 30%;
+	height: 550px;
+
 	
 }
 
@@ -24,8 +56,7 @@ header{
 	min-height: 100vh;
 	padding: 30vw 0 5vw;
 	position: relative;
-	background: url("/img/emirap.jpg");
-	background-repeat: no-repeat;
+
 	transform-style: inherit;
 	width: 100vw;
 	
@@ -60,9 +91,7 @@ header::before{
 	right: 0px;
 	top: 0;
 	display: block;
-	background: url("/img/emirap.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
+	
 	
 	
 	transform-origin: center center 0;
@@ -270,12 +299,38 @@ section{
 	color: purple;
 }
 
+@media only screen and (min-width:400px ){
+
+	header::before{
+		background-image: url("img/emirap.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-size: 320px;
+		position: absolute;
+		left: 70px;
+		width: 100%;
+	}
+
+}
+
+
+
+
 @media only screen and (min-width:650px ){
 
 	body{
 		height: 800px;
 	}
 
+	header::before{
+		background-image: url("img/emirap.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-size: 600px;
+		position: absolute;
+		left: 150px;
+	}
+	
 
 	h1{
 		font-size: 50px;
@@ -370,7 +425,17 @@ section{
 @media only screen and (min-width:800px ){
 
 	body{
-		height: 700px;
+		height: 600px;
+		margin-top: 1%;
+	}
+
+	header::before{
+		background-image: url("img/emirap.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-size: 700px;
+
+		
 	}
 
 	header::before{
@@ -382,19 +447,21 @@ section{
 		right: 100px;
 		top: 0;
 		display: block;
-		background: url("/img/emirap.jpg");
-		background-size: contain;
-		background-repeat: no-repeat;
 		
 		
 		transform-origin: center center 0;
 		transform: translateZ(-1px) scale(2);
 		z-index: -1;
-		min-height: 100vh;
+		min-height: 300px;
 		margin-top: 60%;
 		
 		 
 	
+	}
+
+	h1{
+		position: relative;
+		top: 150px;
 	}
 
 	h2{
@@ -442,17 +509,22 @@ section{
 	}
 
 	header::before{
+		background-image: url("img/emirap.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-size: 450px;}
+
+
+	header::before{
 
 		bottom: 0;
 		content: "";
-		left: 300px;
+		left: 130%;
 		position: absolute;
-		right: 500px;
+		right: 0;
 		top: 0;
 		display: block;
-		background: url("/img/emirap.jpg");
-		background-size: contain;
-		background-repeat: no-repeat;
+		
 		
 		
 		transform-origin: center center 0;
@@ -467,7 +539,8 @@ section{
 
 	h1{
 		position: relative;
-		top: 50px;
+		top: 10px;
+		right: 90px;
 	}
 
 	h2{
@@ -493,6 +566,14 @@ section{
 		margin-top: -1 00px;
 	}
 
+
+	.btn{
+		position: relative;
+		right: 105px;
+
+	
+	}
+
 	.img{
 		width: 400px;
 		height: 500px;
@@ -502,3 +583,41 @@ section{
 }
 
 
+@media only screen and (min-width:1400px ){
+
+
+		header::before{
+
+		background-image: url("img/emirap.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-size: 450px;}
+
+
+
+
+		h1{
+			position: absolute;
+			top: 380px;
+			right: 410px;
+			
+		}
+
+		.event{
+			position: relative;
+			width: 75%;
+			margin-top: -10%;
+		}
+
+		.sec{
+			position: relative;
+			width: 80%;
+		}
+
+		.btn{
+			position: relative;
+			right: 205px;
+		}
+
+
+	}

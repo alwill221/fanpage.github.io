@@ -1,41 +1,40 @@
 
 
+
+
 html{
-	height: 60%;
+	height: 100vh;
 	overflow: hidden;
 	
 }
 
-header::before{
-	background-image: url("img/emirap.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-size: 320px;
-}
-
 
 body{
+	
+	width: 100%;
+	
+	
 	margin: 0;
 	padding: 0;
 	perspective: 1px;
 	transform-style: preserve-3d;
-	height: 150%;
+	height: 5%;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-color:#00a5bb;
 	font-size: 22px;
 	color: black;
-	
-	bottom: 0;
+	top: 0%;
+	bottom: 200%;
 	content: "";
 	left: 0;
 	position: absolute;
 	right: 0px;
-	top: 0;
+
 	display: block;
 	
 
-	
+	min-height: 100vh;
 	
 	
 	transform-origin: center center 0;
@@ -43,10 +42,7 @@ body{
 	z-index: -1;
 	
 
-	min-height:250px;
-	margin-top: 5%;
-	margin-bottom: 30%;
-	height: 550px;
+	
 
 	
 }
@@ -66,7 +62,10 @@ header{
 }
 
 header h1{
-	margin-top: -400px;
+	position: absolute;
+	top: 60%;
+
+	margin-top: 30%;
 	font-weight: bold;
 	color:#ffffff;
 	background: cover;
@@ -89,16 +88,16 @@ header::before{
 	left: 0;
 	position: absolute;
 	right: 0px;
-	top: 0;
+	top: 500px;
 	display: block;
 	
 	
 	
 	transform-origin: center center 0;
-	transform: translateZ(-1px) scale(1.8);
+	transform: translateZ(-1px) scale(2);
 	z-index: -1;
 	min-height: 100vh;
-	margin-top: 60%;
+	margin-top: 0%;
 	
 	 
 
@@ -113,19 +112,35 @@ header *{
 	
 }
 
+.topp{
+	background-color: #000000;
+	border-radius: 80px;
+	height: 120%;
 
+}
+
+
+	
+.rap{
+	position: absolute;
+	top: 2%;
+	right: 1%;
+
+
+}
 
 
 .intro{
-	border: rgb(0, 0, 0) solid 5px;
+	
 	position: relative;
 	left: 10px;
 	border-radius: 10px;
-	background-color: #0697b1;
-	width: 80%;
+	
 	height: auto;
 	color: #ffffff;
-	padding: 2px;
+	padding: 10px;
+	
+	
 	
 }
 
@@ -134,7 +149,7 @@ header *{
 	
 
 p{
-	font-size: 25px;
+	font-size: 26px;
 	color: #ffffff;
 	position: relative;
 	width: 80%;
@@ -143,7 +158,7 @@ p{
 	border: 1%;
 	border-radius: 20px;
 	width: 60%;
-	opacity: 0.7;
+	
 	margin: auto;
 	
 }
@@ -151,7 +166,7 @@ p{
 
 h1{
 	position: relative;
-	top: 265px;
+	top: 250px;
 	font-size: 30px;
 	letter-spacing: 0.2em;
 	font-family: 'Shadows Into Light', cursive;
@@ -164,7 +179,8 @@ h2{
 	font-size: 50px;
 	position: relative;
 	left: 10px;
-	color: #080808;
+	top: 400%;
+	color: #000000;
 	z-index: auto;
 	letter-spacing: 0.2em;
 	
@@ -250,7 +266,7 @@ section{
 
 .img{
 	position: relative;
-	left: 50px;
+	left: 50%;
 }
 
 .TT{
@@ -268,13 +284,13 @@ section{
 	width: 90px;
 	height: 90px;
 	background: #000000;
-	margin-top: 20%;
+	margin-top: 2%;
 	border-radius: 30%;
 	box-shadow: 0 5px -5px #ffffff;
 	color:#00a5bb;
 	overflow: hidden;
 	position: relative;
-	top: -50px;
+	top: -20px;
 
 
 }
@@ -290,8 +306,9 @@ section{
 }
 
 .life{
-	color: black;
+	color: black ;
 	text-decoration: underline;
+	
 	
 }
 
@@ -299,328 +316,428 @@ section{
 	color: purple;
 }
 
+@media only screen and (min-width:319px ){
+.ra4{
+	position: relative;
+	left:11%;
+	top: 10%;
+}
+
+
+}
+
+
+@media only screen and (min-width:374px ){
+
+}
+.pic3{
+	position: relative;
+	right: 10%;
+	top: 10%;
+}
+
+
+
+@media only screen and (min-height:560px )
+{
+	.btn{
+		display: inline-block;
+		width: 90px;
+		height: 90px;
+		background: #000000;
+		margin-top: 2%;
+		border-radius: 30%;
+		box-shadow: 0 5px -5px #ffffff;
+		color:#00a5bb;
+		overflow: hidden;
+		position: relative;
+		top: -100px;
+	
+	
+	}
+}
+
 @media only screen and (min-width:400px ){
 
-	header::before{
-		background-image: url("img/emirap.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-size: 320px;
-		position: absolute;
-		left: 70px;
-		width: 100%;
-	}
-
-}
-
-
-
-
-@media only screen and (min-width:650px ){
-
-	body{
-		height: 800px;
-	}
-
-	header::before{
-		background-image: url("img/emirap.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-size: 600px;
-		position: absolute;
-		left: 150px;
-	}
-	
-
-	h1{
-		font-size: 50px;
-		position: relative;
-		top: 200px;
-	}
-
-	h2{
-		font-size: 70px;
-		letter-spacing: 0.2em;
-	}
-		
-	p{
-		font-size: 30px;
-		
-	}
-
-	.intro{
-		position: relative;
-		left: 67px;
-		
-	}
-
-	.contain{
-		width: 650px;
-		height: 750px;
-	}
-
-	.con2{
-		position: relative;
-		right: 60px;
-		width: 800px;
-	}
-
-	.event{
-
-		background-color: #000000;
-	}
-
-	h4{
-		font-size: 30px;
-	}
-	ul{
-		font-size: 30px;
-		position: relative;
-		right: 300px;
-	}
-
-	.img{
-		width: 400px;
-		height: 500px;
-		position: relative;
-		left: 150px;
-	}
-
-	.TT{
+.r5{
 	position: relative;
-	top: -50px;
-
-	}
-
-	
-.btn{
-	display: inline-block;
-	width: 90px;
-	height: 90px;
-	background: #000000;
-	margin-top: 20%;
-	border-radius: 30%;
-	box-shadow: 0 5px -5px #ffffff;
-	color:#00a5bb;
-	overflow: hidden;
-	position: relative;
-	top: -10px;
-	margin: 30px;
-
-
+	right: 5%;
+	top: 10%;
 }
-
-.btn i{
-	line-height: 90px;
-	font-size: 50px;
-	transition: 0.2s linear;
-}
-
-.btn:hover i{
-	transform: scale(1.3);
-}
-}
-
-
-@media only screen and (min-width:800px ){
-
-	body{
-		
-		margin-top: 1%;
-	}
-
-	header::before{
-		background-image: url("img/emirap.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-size: 700px;
-		height: 150%;
-
-		
-	}
-
-	header::before{
-
-		bottom: 0;
-		content: "";
-		left: 100px;
-		position: absolute;
-		right: 100px;
-		top: 0;
-		display: block;
-		
-		
-		transform-origin: center center 0;
-		transform: translateZ(-1px) scale(2);
-		z-index: -1;
-		min-height: 300px;
-		margin-top: 60%;
-		
-		 
-	
-	}
-
-	h1{
-		position: relative;
-		top: 150px;
-	}
-
-	h2{
-		position: relative;
-		top: 300px;
-	}
-
-	.intro{
-		position: relative;
-		top: 290px;
-	}
-
-	h3{
-		margin-top: 500px;
-		position: relative;
-		top: 50px;
-	}
-
-	.contain{
-		width: 800px;
-		height: 750px;
-	}
-
-	.con2{
-		position: relative;
-		right: 70px;
-		width: 900px;
-	}
-
-	.img{
-		width: 400px;
-		height: 500px;
-		position: relative;
-		left: 300px;
-	}
 
 }
 
 
-@media only screen and (min-width:1100px ){
 
 
-	body{
-		min-height: 1500px;
+	
+	@media only screen and (min-height:630px ){
+
+		.btn{
+			display: inline-block;
+			width: 90px;
+			height: 90px;
+			background: #000000;
+			margin-top: 2%;
+			border-radius: 30%;
+			box-shadow: 0 5px -5px #ffffff;
+			color:#00a5bb;
+			overflow: hidden;
+			position: relative;
+			top: -167px;
+			margin-top: 10%;
+		
+		
+		}
+
 	}
+
+
+	
+
+	@media only screen and (min-height:700px ){
+
+		.btn{
+			display: inline-block;
+			width: 90px;
+			height: 90px;
+			background: #000000;
+			margin-top: 2%;
+			border-radius: 30%;
+			box-shadow: 0 5px -5px #ffffff;
+			color:#00a5bb;
+			overflow: hidden;
+			position: relative;
+			top: -240px;
+			margin-top: 30%;
+		
+		
+		}
+
+
+
+
 	
 
 
-	header::before{
-		background-image: url("img/emirap.jpg");
-		background-repeat: no-repeat;
-	
-		background-size: 400px;}
+	}
 
-
-	header::before{
-
-		bottom: 0;
-		content: "";
-		left: 150%;
-		position: absolute;
-		right: 0;
-		top: 40%;
-		display: block;
+	@media only screen and (min-height:800px ){
+		.btn{
+			display: inline-block;
+			width: 95px;
+			height: 95px;
+			background: #000000;
+			margin-top: 20%;
+			border-radius: 30%;
+			box-shadow: 0 5px -5px #ffffff;
+			color:#00a5bb;
+			overflow: hidden;
+			position: relative;
+			top: -500px;
+			margin-top: 70%;
+			
 		
 		
-		
-		transform-origin: center center 0;
-		transform: translateZ(-1px) scale(4.5);
-		z-index: -1;
-		min-height: 100vh;
-		margin-top: 100%;
-		
-		 
-	
-	}
+		}
 
-	h1{
-		position: relative;
-		top: 10px;
-		right: 90px;
-	}
-
-	h2{
-		letter-spacing: 0.5em;
-		position: relative;
-		left: 200px;
-	}
-
-
-	.contain{
-		width: 800px;
-		height: 650px;
-	}
-
-	.con2{
-		position: relative;
-		right: 80px;
-		width: 1200px;
-		
-	}
-
-	.event{
-		margin-top: -100px;
-	}
-
-
-	.btn{
-		position: relative;
-		right: 105px;
-
-	
-	}
-
-	.img{
-		width: 400px;
-		height: 500px;
-		position: relative;
-		left: 400px;
-	}
-}
-
-
-@media only screen and (min-width:1400px ){
-
-
-		header::before{
-
-		background-image: url("img/emirap.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-size: 450px;}
-
-
-
-
-		h1{
-			position: absolute;
-			top: 380px;
-			right: 410px;
+		.tbut{
+			margin: 30%;
 			
 		}
 
-		.event{
-			position: relative;
-			width: 75%;
-			margin-top: -10%;
+
+		.btn i{
+			line-height: 90px;
+			font-size: 50px;
+			transition: 0.2s linear;
+			margin: 2%;
 		}
+		
 
-		.sec{
-			position: relative;
-			width: 80%;
-		}
-
-		.btn{
-			position: relative;
-			right: 205px;
-		}
-
-
+		
 	}
+
+
+
+@media only screen and (min-width:700px ){
+
+	body{
+		margin: -2%;
+	}
+		
+	.raa{
+		height: 500px;
+		width: 550px;
+		
+	}
+
+	.rap6{
+		position: relative;
+		right: 10%;
+		top: 20%;
+		margin-top: -10%;
+		
+	}
+		
+		.top3{
+			margin-top: -45%;
+			width: 120%;
+			background-color:#00a5bb;
+			
+			
+		
+		}
+
+		.hh{
+			position: absolute;
+			right: 10%;
+			top: -20%;
+			color: white;
+			
+		}
+
+		.co{
+			background-image: url("img/CO.jpg");
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			right: 2%;
+			top: 100%;
+			width: 90%;
+			height: 20%;
+			border-radius: 20px;
+			
+		}
+
+		.int{
+			margin-top: 10%;
+			font-size: 30px;
+			letter-spacing: 0.1em;
+			color: #ffffff;
+			
+		
+			
+		}
+
+		.con2{
+			position: relative;
+			left: -10%;
+			background-color: #000000;
+			width: 150%;
+			height: 150%;
+			
+		}
+
+		.convid{
+			height: 600px;
+			width: 750px;
+		}
+
+		.eve{
+			margin-top: -130%;
+			position: relative;
+			top: -500%;
+			
+		}
+
+		.sect{
+			position: relative;
+			left: 5%;
+
+		}
+
+}
+
+
+@media only screen and (min-height:1250px ){
+	.btn{
+		display: inline-block;
+		width: 95px;
+		height: 95px;
+		background: #000000;
+		margin-top: 20%;
+		border-radius: 30%;
+		box-shadow: 0 5px -5px #ffffff;
+		color:#00a5bb;
+		overflow: hidden;
+		position: relative;
+		top: -550px;
+		margin-top: 90%;
+		
+		
+	
+	
+	}
+
+	.tbut{
+		margin: 30%;
+		
+	}
+
+
+	.btn i{
+		line-height: 90px;
+		font-size: 50px;
+		transition: 0.2s linear;
+		margin: 2%;
+	}
+	
+
+	
+}
+
+@media only screen and (min-width:1250px ){
+
+	.r7{
+		position: relative;
+		right: 25%;
+		top: -40%;
+		margin-top: 5%;
+		
+		
+	}	
+
+	.al2{
+		width: 800px;
+		height: 800px;
+	}
+
+	.top4{
+
+		
+			margin-top: 50%;
+			width: 120%;
+			
+			position: relative;
+			left: -30%;
+	}
+		.int3
+		{
+			margin-top: 10%;
+			font-size: 30px;
+			letter-spacing: 0.1em;
+			color: #ffffff;
+			position: relative;
+			left: -13%;
+		}
+
+		.hh3{
+			position: absolute;
+			left: 8%;
+			top: -75%;
+			color: white;
+			font-size: 40px;
+			letter-spacing: 0.1em;
+			word-spacing: 0.1em;
+			
+
+
+		}
+
+		.co3{
+			
+			position: absolute;
+			right: -10%;
+			top: 110%;
+			width: 75%;
+			height: 20%;
+			border-radius: 20px;
+
+		}
+
+		.wat{
+			position: relative;
+			width: 50%;
+			left: 10%;
+			
+			font-size: 30px;
+		}
+
+		.eve3{
+			position: relative;
+			
+		
+			left: -10%;
+			margin-top: 95%;
+		}
+
+		.sectt{
+			position: relative;
+			top: 200%;
+			margin-top: -5%;
+			left: -2%;
+			width: 80%;
+			
+		}
+
+		.sec22{
+			font-size: 28px;
+		}
+		.eve4{
+			font-size: 28px;
+		}
+
+		.tbt{
+		
+			
+			position: relative;
+			left: -30%;
+			margin: -20%;
+			height: 50%;
+			top: -130%;
+	
+		}
+
+		.tb3{
+			height: 10%;
+			margin: -100%;
+			
+			
+		}
+}
+
+@media only screen and (min-width:1440px ){
+
+	.r8{
+		position: relative;
+		left: 10%;
+	}
+
+	.con33{
+		position: relative;
+		right: -20%;
+		width: 100%;
+		background-color: black;
+	}
+
+	.convid3{
+		width: 700px;
+		height: 500px;
+	}
+
+	.tbb{
+	
+			left: -30%;
+			margin: 5%;
+			
+			top: 180%;
+			
+			display: inline-block;
+		width: 110px;
+		height: 110px;
+		background: #000000;
+		margin-top: 20%;
+		border-radius: 30%;
+		box-shadow: 0 5px -5px #ffffff;
+		color:#00a5bb;
+		overflow: hidden;
+		position: relative;
+	
+		margin-top: 9%;
+	}
+}
+
+
+
+

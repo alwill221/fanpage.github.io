@@ -438,23 +438,7 @@ section{
 
 	
 
-		.tbut{
-			margin: 30%;
-			
-		}
-
-
-		.btn i{
-			line-height: 90px;
-			font-size: 50px;
-			transition: 0.2s linear;
-			margin: 2%;
-		}
 		
-
-		
-	}
-
 
 
 @media only screen and (min-width:700px ){
